@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-unsigned int ns[] = { 10, /* TODO: fill in "n" i.e. instance sizes */ };
+unsigned int ns[] = { 10,100,1000,3000,5000,7000,9000,11000,13000,15000,18000,20000 };
 
 void fill_increasing(int *t, unsigned int n) {
     for (unsigned int i = 0; i < n; i++)
