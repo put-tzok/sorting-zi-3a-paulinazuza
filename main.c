@@ -136,12 +136,12 @@ void heapify(int *t, int n, int i)
 
 
 void heap_sort(int *t, unsigned int n) {
-    for(int i = n / 2 - 1; i >= 0; i--){ //budowanie stosu, zmiana uk³adu tablicy
+    for(int i = n / 2 - 1; i >= 0; i--){ //budowanie stosu, zmiana układu tablicy
         heapify(t, n, i);
     }
     for(int i = n - 1; i >= 0; i--){ //wypakowywanie elemntów ze stosu jeden po drugim
         swap(t, 0, i); 
-        heapify(t, i, 0); //wywo³uje max
+        heapify(t, i, 0); //wywołuje maximum
     }
 }
 
