@@ -107,6 +107,7 @@ void quick_sort(int *t, int p, int r)
     int q;
     if(p < r)
     {
+        //q = random_partition(t, p, r); losowy element rozdzielający
         q = partition(t, p, r); //dzielimy tablice na dwie czesci; q oznacza punkt podzialu
         quick_sort(t, p, q - 1); //wywolujemy rekurencyjnie quicksort dla pierwszej czesci tablicy
         quick_sort(t, q + 1, r); //wywolujemy rekurencyjnie quicksort dla drugiej czesci tablicy
